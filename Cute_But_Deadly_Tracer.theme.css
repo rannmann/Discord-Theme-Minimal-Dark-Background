@@ -1,4 +1,4 @@
-//META{"name":"Cute_But_Deadly_Tracer_theme","description":"#TeamTracer","author":"Aya","version":"1.0"}*//
+//META{"name":"Cute_But_Deadly_Tracer_theme","description":"#TeamTracer","author":"Aya","version":"1.1"}*//
 
 
 .app,
@@ -18,7 +18,7 @@ li.selected, span >div.selected, section > div > div > div > div > div.selected,
 .messages .markup code.inline {
     background: rgba(60, 60, 60, .4) !important;
 }
-.title-wrap, .messages-wrapper, .flex-spacer, .scroller, .account, .links, .guilds-wrapper, .btn-settings, .btn-deafen, .btn-mute, .btn-info, .btn-disconnect, .typing, .private-channels, .search-bar, .friends-header, .friends-table, .messages .markup pre, #friends, #voice-connection, header {
+.title-wrap, .messages-wrapper, .flex-spacer, .scroller, .account, .links, .guilds-wrapper, .btn-settings, .btn-deafen, .btn-mute, .btn-info, .btn-disconnect, .typing, .private-channels, .search-bar, .friends-header, .friends-table, .messages .markup pre, #friends, #voice-connection, .guild-header header {
     background: transparent !important;
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
@@ -420,4 +420,9 @@ li.selected, span > div.selected, section > div > div > div > div > div.selected
 {
         color:#f99e1a !important;
     
+}
+/*popout when you click a username*/
+.user-popout .header{
+    
+    opacity:1;
 }
