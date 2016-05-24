@@ -1,4 +1,4 @@
-//META{"name":"Cute_But_Deadly_Tracer_theme","description":"#TeamTracer","author":"Aya","version":"1.1"}*//
+//META{"name":"Cute_But_Deadly_Tracer_theme","description":"#TeamTracer","author":"Aya","version":"1.2"}*//
 
 
 .app,
@@ -12,12 +12,14 @@
 .divider > div {
     height: 2px !important;
 }
+/*
 li.selected, span >div.selected, section > div > div > div > div > div.selected, .friends-row:hover, li.channel-text:hover, div.channel.private:hover, .btn-friends:hover, .messages .markup pre code.hljs, .member:hover {
     background: rgba(60, 60, 60, .2) !important;
 }
 .messages .markup code.inline {
     background: rgba(60, 60, 60, .4) !important;
 }
+    */
 .title-wrap, .messages-wrapper, .flex-spacer, .scroller, .account, .links, .guilds-wrapper, .btn-settings, .btn-deafen, .btn-mute, .btn-info, .btn-disconnect, .typing, .private-channels, .search-bar, .friends-header, .friends-table, .messages .markup pre, #friends, #voice-connection, .guild-header header {
     background: transparent !important;
 }
@@ -39,6 +41,7 @@ li.selected, span >div.selected, section > div > div > div > div > div.selected,
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
   }
+
 /*server name text above channel names*/
 .guild-header header span{
     color:#f99e1a;
@@ -135,20 +138,29 @@ background-position:center !important;
 }
 /*TEXT CHANNELS/VOICE CHANNELS text*/
 .guild-channels header h2{
-    color:#f99e1a;
-    opacity:1;
+    color:#f99e1a !important;
+    opacity:1 !important;
 }
 .guild-channels ul .channel a{
-    color:#f99e1a;
-    opacity:1;
+    color:#f99e1a !important;
+    opacity:1 !important;
+}
+.guild-channels .channel a{
+     color:#f99e1a !important;
+    opacity:1 !important;
 }
 .guild-channels ul .channel-text.channel-muted:not(.selected) span{
-    color:#f99e1a;
-    opacity:1;
+    color:#f99e1a !important;
+    opacity:1 !important;
+}
+
+.guild-channels .channel .channel-name{
+    color:#f99e1a !important;
+    opacity:1 !important;
 }
 /*selected text channel*/
 .guild-channels ul .channel-text.selected a{
-    color:#f99e1a;
+    color:#f99e1a !important;
     font-weight:800 !important;
     text-shadow:1px 1px 0 #43484c,
 -1px -1px 0 #43484c,
@@ -160,6 +172,19 @@ background-position:center !important;
 0 0 15px #faf5ab,
 -1px 0px 0 #43484c;
     
+}
+.guild-channels .channel-text.selected a{
+    color:#f99e1a !important;
+    font-weight:800 !important;
+    text-shadow:1px 1px 0 #43484c,
+-1px -1px 0 #43484c,
+1px -1px 0 #43484c,
+-1px 1px 0 #43484c,
+0px 1px 0 #43484c,
+1px 0px 0 #43484c,
+0px -1px 0 #43484c,
+0 0 15px #faf5ab,
+-1px 0px 0 #43484c;
 }
 /*unread channels */
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted) a{
@@ -178,9 +203,17 @@ li.selected, span > div.selected, section > div > div > div > div > div.selected
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before{
     background:#f99e1a !important;
 }
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before{
+    background:#f99e1a !important;
+
+}
 
 /*text in voice channel while not talking*/
 .guild-channels ul .channel-voice.audio li{
+    color:#f99e1a !important;
+}
+.guild-channels .channel-voice-states li span
+{
     color:#f99e1a !important;
 }
 .guild-channels ul .channel-voice-states li{
@@ -222,6 +255,9 @@ li.selected, span > div.selected, section > div > div > div > div > div.selected
 }
 /* color of avatar outline when speaking*/
 .guild-channels ul .channel-voice-states li.speaking .avatar-small{background-color:#6F8AE0;cursor:pointer;border:2px solid #f99e1a !important;}
+.guild-channels .channel-voice-states li.speaking .avatar-small{
+    background-color:#6F8AE0;cursor:pointer;border:2px solid #f99e1a !important;
+}
 /*color of name text when speaking*/
 .guild-channels ul .channel-voice-states li.speaking{
     color:#f99e1a !important;
