@@ -1,3 +1,2 @@
-# Overwatch-Cute-But-Deadly-Tracer-
-Celebrate the launch of Overwatch with this Cute But Deadly Tracer theme for betterDiscord!!
-Make sure that you are using Discords "Dark" appearance!
+# Discord-Theme-Minimal-Dark-Background
+Use Discord's "Dark" theme, then apply this theme to BetterDiscord.
